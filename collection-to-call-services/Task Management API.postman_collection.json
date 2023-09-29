@@ -1,0 +1,643 @@
+{
+	"info": {
+		"_postman_id": "fff2ed41-546e-4ff2-b12d-feb8f40220af",
+		"name": "Task Management API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15288574"
+	},
+	"item": [
+		{
+			"name": "getTasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 getAllTasks",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 03:38:08 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"taskId\": \"cb22654a-8406-4fe8-a947-0fa2d13fc290\",\n        \"title\": \"Tarea 1\",\n        \"description\": \"Descripción de la Tarea 1\",\n        \"expirationDate\": \"2023-09-29\",\n        \"status\": \"Pendiente\"\n    },\n    {\n        \"taskId\": \"59eb2515-f8fa-4c45-8293-d8ffbdea4ace\",\n        \"title\": \"Tarea 2\",\n        \"description\": \"Descripción de la Tarea 2\",\n        \"expirationDate\": \"2023-09-29\",\n        \"status\": \"Pendiente\"\n    },\n    {\n        \"taskId\": \"32ccf105-ccc4-405a-adcd-f3c8c76d0dd2\",\n        \"title\": \"Tarea 3\",\n        \"description\": \"Descripción de la Tarea 3\",\n        \"expirationDate\": \"2023-09-29\",\n        \"status\": \"Pendiente\"\n    },\n    {\n        \"taskId\": \"75954be5-ab4c-4df6-b39b-ef0ed2801a89\",\n        \"title\": \"Tarea 4\",\n        \"description\": \"Descripción de la Tarea 4\",\n        \"expirationDate\": \"2023-09-29\",\n        \"status\": \"Pendiente\"\n    },\n    {\n        \"taskId\": \"7ff22d33-b971-4225-8ac6-e63561e97b3c\",\n        \"title\": \"Tarea 5\",\n        \"description\": \"Descripción de la Tarea 5\",\n        \"expirationDate\": \"2023-09-29\",\n        \"status\": \"Pendiente\"\n    },\n    {\n        \"taskId\": \"7801e241-1cc8-4e6f-b395-a16ef0e1221a\",\n        \"title\": \"Tarea 6\",\n        \"description\": \"Descripción de la Tarea 6\",\n        \"expirationDate\": \"2023-09-29\",\n        \"status\": \"Pendiente\"\n    },\n    {\n        \"taskId\": \"b3cf0eec-a995-43a7-b55a-d487a7cf32f4\",\n        \"title\": \"Tarea 7\",\n        \"description\": \"Descripción de la Tarea 7\",\n        \"expirationDate\": \"2023-09-29\",\n        \"status\": \"Pendiente\"\n    },\n    {\n        \"taskId\": \"89d9d657-1113-42c2-a038-40591642bbf2\",\n        \"title\": \"Tarea 8\",\n        \"description\": \"Descripción de la Tarea 8\",\n        \"expirationDate\": \"2023-09-29\",\n        \"status\": \"Pendiente\"\n    },\n    {\n        \"taskId\": \"31e3535f-945f-4bc3-9c25-ef86466d4f82\",\n        \"title\": \"Tarea 9\",\n        \"description\": \"Descripción de la Tarea 9\",\n        \"expirationDate\": \"2023-09-29\",\n        \"status\": \"Pendiente\"\n    },\n    {\n        \"taskId\": \"9ffba210-ae2c-4cc7-b2f4-4961aff3ec9f\",\n        \"title\": \"Tarea 10\",\n        \"description\": \"Descripción de la Tarea 10\",\n        \"expirationDate\": \"2023-09-29\",\n        \"status\": \"Pendiente\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "getTask",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/tasks/cb22654a-8406-4fe8-a947-0fa2d13fc290",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"tasks",
+						"cb22654a-8406-4fe8-a947-0fa2d13fc290"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 getTask",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks/cb22654a-8406-4fe8-a947-0fa2d13fc290",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"cb22654a-8406-4fe8-a947-0fa2d13fc290"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 03:40:25 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"taskId\": \"cb22654a-8406-4fe8-a947-0fa2d13fc290\",\n    \"title\": \"Tarea 1\",\n    \"description\": \"Descripción de la Tarea 1\",\n    \"expirationDate\": \"2023-09-29\",\n    \"status\": \"Pendiente\"\n}"
+				},
+				{
+					"name": "404 task not found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks/d98bca3a-07fb-41b4-a2b8-a12a24c746e7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"d98bca3a-07fb-41b4-a2b8-a12a24c746e7"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 03:39:17 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 404,\n    \"message\": \"Task not found [d98bca3a-07fb-41b4-a2b8-a12a24c746e7]\",\n    \"timestamp\": \"2023-09-29T03:39:17.629157\"\n}"
+				}
+			]
+		},
+		{
+			"name": "delete Task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/tasks/cb22654a-8406-4fe8-a947-0fa2d13fc290",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"tasks",
+						"cb22654a-8406-4fe8-a947-0fa2d13fc290"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "204 delete Task Ok",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks/cb22654a-8406-4fe8-a947-0fa2d13fc290",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"cb22654a-8406-4fe8-a947-0fa2d13fc290"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 03:41:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "404 Task to delete not found",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks/94de833e-b941-4c66-9199-05fb2d6289fe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"94de833e-b941-4c66-9199-05fb2d6289fe"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 03:40:45 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 404,\n    \"message\": \"Task not found [94de833e-b941-4c66-9199-05fb2d6289fe]\",\n    \"timestamp\": \"2023-09-29T03:40:45.677614\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n   {\r\n        \r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201 task created",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n   {\r\n        \"title\": \"Este es un titulo\",\r\n        \"description\": \"descripcion del titulo\",\r\n        \"expirationDate\": \"2023-09-25\",\r\n        \"status\": \"Expirado\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 03:48:27 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"taskId\": \"ddf1f793-3698-4af2-93b4-0f71ed464287\",\n        \"title\": \"Este es un titulo\",\n        \"description\": \"descripcion del titulo\",\n        \"expirationDate\": \"2023-09-25\",\n        \"status\": \"Expirado\"\n    }\n]"
+				},
+				{
+					"name": "400 incorrect input values",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n   {\r\n        \r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 03:48:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 400,\n    \"message\": \"incorrect input values\",\n    \"timestamp\": \"2023-09-29T03:48:47.43784\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update Tasks",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"taskId\": \"f0188b7c-1840-4d6c-be54-88f933b0aa19\",\r\n        \"title\": \"Tarea modificada\",\r\n        \"description\": \"Descripción de la Tarea 1\",\r\n        \"expirationDate\": \"2023-09-29\",\r\n        \"status\": \"Pendiente\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 update Tasks",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"taskId\": \"f0188b7c-1840-4d6c-be54-88f933b0aa16\",\r\n        \"title\": \"Tarea modificada\",\r\n        \"description\": \"Descripción de la Tarea 1\",\r\n        \"expirationDate\": \"2023-09-29\",\r\n        \"status\": \"Pendiente\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 03:49:42 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"taskId\": \"f0188b7c-1840-4d6c-be54-88f933b0aa16\",\n        \"title\": \"Tarea modificada\",\n        \"description\": \"Descripción de la Tarea 1\",\n        \"expirationDate\": \"2023-09-29\",\n        \"status\": \"Pendiente\"\n    }\n]"
+				},
+				{
+					"name": "400 TaskId is null",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"title\": \"Tarea modificada\",\r\n        \"description\": \"Descripción de la Tarea 1\",\r\n        \"expirationDate\": \"2023-09-29\",\r\n        \"status\": \"Pendiente\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 03:51:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 400,\n    \"message\": \"Task cannot be null\",\n    \"timestamp\": \"2023-09-29T03:51:01.932503\"\n}"
+				},
+				{
+					"name": "404 TaskId not found",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"taskId\": \"f0188b7c-1840-4d6c-be54-88f933b0aa19\",\r\n        \"title\": \"Tarea modificada\",\r\n        \"description\": \"Descripción de la Tarea 1\",\r\n        \"expirationDate\": \"2023-09-29\",\r\n        \"status\": \"Pendiente\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 03:51:59 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 404,\n    \"message\": \"Task not found [f0188b7c-1840-4d6c-be54-88f933b0aa19]\",\n    \"timestamp\": \"2023-09-29T03:51:59.437156\"\n}"
+				}
+			]
+		}
+	]
+}
