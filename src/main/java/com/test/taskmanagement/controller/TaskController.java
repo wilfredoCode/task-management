@@ -30,6 +30,7 @@ public class TaskController {
     public Optional<Task> getById(@PathVariable("taskId") UUID taskId){
         return taskService.getTask(taskId);
     }
+    @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
     public List<Task> createTasks(@RequestBody List<Task> task){
        return taskService.createTasks(task);
